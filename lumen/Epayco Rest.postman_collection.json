@@ -1,0 +1,845 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Epayco Rest",
+		"_postman_id": "9478fee0-e719-6308-89e4-d86688a59974",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Pago Credito",
+			"request": {
+				"url": {
+					"raw": "http://secure3.payco.co/post_pago_comercio",
+					"protocol": "http",
+					"host": [
+						"secure3",
+						"payco",
+						"co"
+					],
+					"path": [
+						"post_pago_comercio"
+					],
+					"query": [
+						{
+							"key": "nombres",
+							"value": "testing",
+							"equals": true,
+							"description": "",
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "public_key",
+							"value": "9a9347047b266e2b695688f618d2fe14",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "url_respuesta",
+							"value": "https://secure.payco.co/restpagos/testRest/endpagopse.php",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "url_confirmacion",
+							"value": "https://secure.payco.co/restpagos/testRest/endpagopse.php",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "metodoconfirmacion",
+							"value": "GET",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "tipo_doc",
+							"value": "CC",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "documento",
+							"value": "10358519",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "nombres",
+							"value": "testing",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "apellidos",
+							"value": "payco",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "pais",
+							"value": "CO",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "depto",
+							"value": "Antioquia",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "ciudad",
+							"value": "Medellin",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "telefono",
+							"value": "0000000",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "celular",
+							"value": "04128582215",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "direccion",
+							"value": "Calle 10 # 40-30",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "no-responder@payco.co",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "id_usuario",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "id_tarjeta",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "pin",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "codigo_pago",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "extra1",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "extra2",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "extra3",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "validar_cvv",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "enpruebas",
+							"value": "TRUE",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "fechaExpedicion",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "franquicia",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "tarjeta",
+							"value": "VS",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "codigoseguridad",
+							"value": "770",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "cuotas",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "fechaexpiracion",
+							"value": "11-19",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "factura",
+							"value": "1472050778",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "valor",
+							"value": "10000",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "iva",
+							"value": "0",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "baseiva",
+							"value": "0",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "moneda",
+							"value": "COP",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "ip",
+							"value": "190.0.62.238",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "descripcion",
+							"value": "pay test2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "franquicia",
+							"value": "DINNERS",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Endpoint pago credito"
+			},
+			"response": []
+		},
+		{
+			"name": "Access Token",
+			"request": {
+				"url": "http://localhost/epayco-rest/public/oauth/access_token",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "78954",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "efecty@payco.co",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Efectyservicios$$",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Crear Access Token"
+			},
+			"response": []
+		},
+		{
+			"name": "Pago Debito",
+			"request": {
+				"url": {
+					"raw": "http://localhost/epayco-rest/public/post_pago_comercio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"epayco-rest",
+						"public",
+						"post_pago_comercio"
+					],
+					"query": [
+						{
+							"key": "nombres",
+							"value": "testing",
+							"equals": true,
+							"description": "",
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "public_key",
+							"value": "9a9347047b266e2b695688f618d2fe14",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "url_respuesta",
+							"value": "https://secure.payco.co/restpagos/testRest/endpagopse.php",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "url_confirmacion",
+							"value": "https://secure.payco.co/restpagos/testRest/endpagopse.php",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "metodoconfirmacion",
+							"value": "GET",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "tipo_doc",
+							"value": "CC",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "documento",
+							"value": "10358519",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "nombres",
+							"value": "testing",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "apellidos",
+							"value": "payco",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "pais",
+							"value": "CO",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "depto",
+							"value": "Antioquia",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "ciudad",
+							"value": "Medellin",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "telefono",
+							"value": "0000000",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "celular",
+							"value": "04128582215",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "direccion",
+							"value": "Calle 10 # 40-30",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "no-responder@payco.co",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "id_usuario",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "id_tarjeta",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "pin",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "codigo_pago",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "extra1",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "extra2",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "extra3",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "validar_cvv",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "enpruebas",
+							"value": "TRUE",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "fechaExpedicion",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "franquicia",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "tarjeta",
+							"value": "VS",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "codigoseguridad",
+							"value": "770",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "cuotas",
+							"value": "",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "fechaexpiracion",
+							"value": "11-19",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "factura",
+							"value": "1472050778",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "valor",
+							"value": "10000",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "iva",
+							"value": "0",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "baseiva",
+							"value": "0",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "moneda",
+							"value": "COP",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "ip",
+							"value": "190.0.62.238",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "descripcion",
+							"value": "pay test2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "franquicia",
+							"value": "DINNERS",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Endpoint pago credito"
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar Gana",
+			"request": {
+				"url": {
+					"raw": "http://secure3.payco.co/v1/gana/consult/159509?access_token=xxNN4wExQ41l5Y5je2HG3H1cwgtFsU75MzlXdrSX",
+					"protocol": "http",
+					"host": [
+						"secure3",
+						"payco",
+						"co"
+					],
+					"path": [
+						"v1",
+						"gana",
+						"consult",
+						"159509"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "xxNN4wExQ41l5Y5je2HG3H1cwgtFsU75MzlXdrSX",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar Efecty",
+			"request": {
+				"url": {
+					"raw": "http://secure3.payco.co/v1/efecty/consult/159112?access_token=UqgwMdl0IDSMctJhDRp92SDdaCJHqUsbSyb3oYSv",
+					"protocol": "http",
+					"host": [
+						"secure3",
+						"payco",
+						"co"
+					],
+					"path": [
+						"v1",
+						"efecty",
+						"consult",
+						"159112"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "UqgwMdl0IDSMctJhDRp92SDdaCJHqUsbSyb3oYSv",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "h74CGffkH7Hruk8JUnggcpKhdifKWt0GCIxc4nWb",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "id0",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "client_secret",
+							"value": "secret0",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "abe.towne@yahoo.com",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "secret",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "scope",
+							"value": "*",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Aplicar pago Gana",
+			"request": {
+				"url": {
+					"raw": "http://secure3.payco.co/v1/gana/applypayment?referencia=2&valor=200&oficina=av bolivar&fecha=2017-07-06&ordendeservicio=1",
+					"protocol": "http",
+					"host": [
+						"secure3",
+						"payco",
+						"co"
+					],
+					"path": [
+						"v1",
+						"gana",
+						"applypayment"
+					],
+					"query": [
+						{
+							"key": "referencia",
+							"value": "2",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "id_cliente",
+							"value": "1",
+							"equals": true,
+							"description": "",
+							"disabled": true
+						},
+						{
+							"key": "valor",
+							"value": "200",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "oficina",
+							"value": "av bolivar",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "fecha",
+							"value": "2017-07-06",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "ordendeservicio",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "UqgwMdl0IDSMctJhDRp92SDdaCJHqUsbSyb3oYSv",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Aplicar Pago Efecty",
+			"request": {
+				"url": {
+					"raw": "http://secure3.payco.co/v1/efecty/applypayment?referencia=2&valor=200&oficina=av bolivar&fecha=2017-07-06&ordendeservicio=1",
+					"protocol": "http",
+					"host": [
+						"secure3",
+						"payco",
+						"co"
+					],
+					"path": [
+						"v1",
+						"efecty",
+						"applypayment"
+					],
+					"query": [
+						{
+							"key": "referencia",
+							"value": "2",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "valor",
+							"value": "200",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "oficina",
+							"value": "av bolivar",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "fecha",
+							"value": "2017-07-06",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "ordendeservicio",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "access_token",
+							"value": "UqgwMdl0IDSMctJhDRp92SDdaCJHqUsbSyb3oYSv",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
