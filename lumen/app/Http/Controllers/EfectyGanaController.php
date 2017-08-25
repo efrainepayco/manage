@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 use App\Events\ExampleEvent;
 use App\Http\Lib\PaycoAesPrueba;
-use \App\Models\Transacciones as Transacciones;
+use \App\Models\Transacciones;
 use \App\Models\DetalleTransacciones;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Crypt;
